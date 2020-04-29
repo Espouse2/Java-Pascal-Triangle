@@ -23,14 +23,20 @@ public class Main {
             view.welcomeMsg();
             int numberOfRows = view.getNumberOfRows();
             model.isValid(numberOfRows);
-            //view.getWhichMethod();
-            if(view.getWhichMethod() == 1) {
-                view.printingValuesOfPascalTriangle2(model.pascalTriangleSum2(numberOfRows), numberOfRows);
-            }else
-                view.printingValuesOfPascalTriangle2(model.pascalTriangleBinCoeff2(numberOfRows), numberOfRows);
+            switch(view.getWhichMethod()) {
+                case 1:
+                    view.printingValuesOfPascalTriangle2(model.pascalTriangleSum2(numberOfRows), numberOfRows);
+                    break;
+                case 2:
+                    view.printingValuesOfPascalTriangle2(model.pascalTriangleBinCoeff2(numberOfRows), numberOfRows);
+                    break;
+            }
         }
         catch(NoPositiveValueException exception){
             view.printData(exception.getMessage().toString());
+        }
+         catch(InputMismatchException exception) {
+            System.out.println("Please provide a positive integer.");
         }
     }
 }
