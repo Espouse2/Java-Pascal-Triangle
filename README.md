@@ -7,7 +7,7 @@ This project is divided into 4 classes:
 This class is the controller of my project. Here everything comes to life and everything is put together to form a working project. 
 
 ### Model:
-This class is the brain of my project. Whole math behind creation of the Pascals Triangle is done. There are two methods, from which we can choose, that create the Pascal's Triangle: method of binomial coefficient and method of summation of 2 'above' numbers. 
+This class is the brain of my project. Whole math behind creation of the Pascals Triangle is done here. There are two methods, from which we can choose, that create the Pascal's Triangle: method of binomial coefficient and method of summation of 2 'above' numbers. 
 
 The binomial coefficient method calculates the value of each node of Pascal's Triangle by using nCr formula of node's position. For example, let x determine vertical position and y horizontal position, when we want to calculate value of second number in third row we apply x = 3 and y = 2 into nCr formula, i.e binomial coefficient formula. From that we can see, that for given position, node value will be 3C2 which results in: 3. 
 
