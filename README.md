@@ -1,7 +1,7 @@
 # Java-Pascal-Triangle
 This is my project I have created for Introduction to Programming in Java course. 
 
-This project consists of 4 classes:
+This project is divided into 4 classes:
 
 ### Main:
 This class is the controller of my project. Here everything comes to life and everything is put together to form a working project. 
